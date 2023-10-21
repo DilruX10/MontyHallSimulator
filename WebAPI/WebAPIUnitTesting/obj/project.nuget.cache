@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "D8erexwf6zU6lN8exm4OkEkr3gT65HBW+2v/pIwkKqqqPs+fzC/WHMzuD6Gedci/6b33jbFdLNZ49CZTZwRQeA==",
+  "dgSpecHash": "2qst6evEByZTYDlzrotQ2hQudBnt/OgPZgqhQ0KWj+fyhHKYX0Xxwd1xMzNr8EaaUQeVaDtd4u90C0+7gnO4Pg==",
   "success": true,
   "projectFilePath": "D:\\Workspace\\OngoingProjects\\DCE\\WebAPI\\WebAPIUnitTesting\\WebAPIUnitTesting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
+    "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\microsoft.net.test.sdk\\17.5.0\\microsoft.net.test.sdk.17.5.0.nupkg.sha512",
     "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.5.0\\microsoft.testplatform.objectmodel.17.5.0.nupkg.sha512",
     "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\microsoft.testplatform.testhost\\17.5.0\\microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
     "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
@@ -16,6 +18,10 @@
     "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
     "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",
     "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\nunit3testadapter\\4.4.2\\nunit3testadapter.4.4.2.nupkg.sha512",
+    "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "C:\\Users\\DIlru Kumarathunga\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
   "logs": []
