@@ -1,0 +1,115 @@
+<!-- Content -->
+<div class="container flex flex-col items-stretch">
+  <!-- Title -->
+  <div class="title text-3xl font-bold underline text-center m-7">
+    <h1>Monty Python Simulator</h1>
+  </div>
+
+  <!--Paragraph-->
+  <div class="flex flex-row items-center m-2 mx-16">
+    <img
+      src="../assets/imgs/MontyHallImg.jpg"
+      alt="text"
+      width="100%"
+      height="auto"
+    />
+    <p class="para text-lg text-justify ml-4">
+      The Monty Hall is a brain teaser, in the form of a probability puzzle,
+      loosely based on the American television game show Let's Make a Deal and
+      named after its original host, Monty Hall. The concept of the game is that
+      the player sees three closed doors - behind one is a car, and behind the
+      other two are goats. The game starts with the player getting to choose a
+      door, without opening it. Then the presenter opens one of the two
+      remaining doors (but never the one with the car) and shows that this door
+      does not contain profit. The player is then given another choice to change
+      the door. You can enter number of simulations and choose whether to change
+      the door, then results of the simulated games will shown in tabular
+      format.
+    </p>
+  </div>
+
+  <hr class="mt-5" />
+
+  <!-- Form to submit noOfSims and condition  -->
+  <div class="montyForm self-center items-stretch mt-8">
+    <form
+      [formGroup]="form"
+      class="border border-1 border-solid border-black rounded-lg flex flex-row items-center"
+      (ngSubmit)="onSubmit()"
+    >
+      <!--noOfSims-->
+      <div class="inputControl m-5 px-7">
+        <label class="mx-2">Num Of Simulations: </label>
+        <input
+          type="number"
+          formControlName="size"
+          placeholder="size"
+          class="w-16"
+          min="0"
+          required
+        />
+      </div>
+
+      <!--Change door-->
+      <div class="inputControl m-5 px-7">
+        <label class="mx-2">Change Door: </label>
+        <select
+          class="form-control"
+          id="changeDoor"
+          formControlName="changeDoor"
+          class="w-16"
+          required
+        >
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+      </div>
+
+      <!--Submit button-->
+      <div class="inputControl m-5 px-7">
+        <button
+          type="submit"
+          class="border-gray-500 p-2 border-solid border rounded-lg hover:bg-gray-500 hover:text-white"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Result Table -->
+  <div class="resultTable w-full mt-7 flex flex-col items-center">
+    <!--header-->
+    <table class="border border-1 border-solid border-spacing-3 w-[98%]">
+      <thead>
+        <tr class="bg-gray-200 h-8 border border-1 border-black border-solid">
+          <th>Game</th>
+          <th>Choosed Door</th>
+          <th>Opened Door</th>
+          <th>Changed Door</th>
+          <th>Door with the Prize</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+
+      <!--body-->
+      <tbody *ngIf="games.length != 0">
+        <tr
+          *ngFor="let game of games"
+          class="border border-1 border-grey-200 border-solid h-16"
+        >
+          <td align="center">{{ game.id + 1 }}</td>
+          <td align="center">{{ game.choosedDoor }}</td>
+          <td align="center">{{ game.openedDoor }}</td>
+          <td align="center">
+            <span *ngIf="game.changedDoor == -1">Door wasn't changed</span>
+            <span *ngIf="game.changedDoor != -1">{{ game.changedDoor }}</span>
+          </td>
+          <td align="center">{{ game.moneyDoor }}</td>
+          <td align="center">{{ game.result }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <router-outlet></router-outlet>
+</div>
