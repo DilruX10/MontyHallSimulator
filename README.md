@@ -17,8 +17,7 @@ The Monty Hall is a brain teaser, in the form of a probability puzzle, loosely b
 Clone the repository.
 
 #### Frontend: 
-  `yarn install` 
-  `ng serve --open`
+  `yarn install` -> `ng serve --open`
 
 #### Backend:
   `dotnet run`
